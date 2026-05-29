@@ -1,0 +1,4 @@
+### udid RF8T50HJVXX
+### appPackage com.medtronic.neuro.insrecharger
+### appActivity .presentation.activities.SplashActivity
+Connect = CONNECT > @ENTER MANUALLY > @NRA > @0 > @1 > @0 > @9 > @0 > @3 > @CONTINUE > ham::60 > About > _ss_A10e_PainRC_SCS_TestCase4_Recharger_About_Screen1 > RECHARGER > _ss_A10e_PainRC_SCS_TestCase1_Device_Found_ScreenA10e_PainRC_SCS_TestCase4_Recharger_About_Screen2

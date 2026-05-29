@@ -1,0 +1,4 @@
+### udid R58T40L43NY
+### appPackage com.android.vending
+### appActivity .AssetBrowserActivity
+play store = xpath((//android.widget.ImageView[@resource-id="com.android.vending:id/0_resource_name_obfuscated"])[1]) > Play Protect > xpath(//android.widget.Button[@content-desc="Settings"]) > &//android.widget.TextView[@text="Scan apps with Play Protect"]||off > Turn off::5*

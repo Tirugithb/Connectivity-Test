@@ -1,0 +1,9 @@
+### udid R52W307VZ5X
+### appPackage com.medtronic.neuro.SynchroMedPlus
+### appActivity .userinterface.activities.StartAppActivity
+SYNC connectivity = CONNECT > check(SELECT WORKFLOW)::120 > _ss_home_page
+//STIM ON = &Stimulation||on > @STIM ON* > @START
+Stimulation = *REFILL & ADJUST > @START > Reservoir > _ss_reservoir
+About Screen = setting > About > _ss_about > @CLOSE
+Exit = setting > End Session > @END SESSION
+Report = REPORTS > script(report,3) > @CONFIRM > @OK::120 > @CLOSE

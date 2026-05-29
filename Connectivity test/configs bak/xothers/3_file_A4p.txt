@@ -1,0 +1,5 @@
+### udid R52W307VZ5X
+### appPackage com.sec.android.app.myfiles
+### appActivity .ui.MainActivity
+open = exec(adb shell am start -n com.sec.android.app.myfiles/.ui.MainActivity)
+docs = Internal storage > xpath(//android.widget.TextView[@content-desc="Documents, Folder"]) > Reports > xpath((//android.widget.LinearLayout[@resource-id="com.sec.android.app.myfiles:id/main_text_container"])[1])> Adobe Acrobat > @Just once::5* > _ss_A4P_SynchroMedII_TestCase4_Adobe_Screen > _back_ > xpath((//android.widget.LinearLayout[@resource-id="com.sec.android.app.myfiles:id/main_text_container"])[1]) > Content > @Just once::5* > print(Please take report photo) > delay(0.50)

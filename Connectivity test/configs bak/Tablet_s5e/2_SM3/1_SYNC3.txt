@@ -1,0 +1,8 @@
+### appPackage com.medtronic.neuro.SynchroMedPlus
+### appActivity .userinterface.activities.StartAppActivity
+pre = script(update_off_s5e)
+SYNC connectivity = CONNECT > check(SELECT WORKFLOW)::120 > _ss_A4P_SynchroMed III_TestCase1_Home_Screen
+Stimulation = *REFILL & ADJUST > @START > Reservoir > _ss_A4P_SynchroMed III_TestCase1_Refill_Screen
+About Screen = setting > About > _ss_A4P_SynchroMed III_TestCase1_About_Screen > @CLOSE
+Exit = setting > End Session > @END SESSION
+Report = REPORTS > script(report,3) > @CONFIRM > @OK::120 > @CLOSE

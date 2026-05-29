@@ -1,0 +1,5 @@
+### udid RF8T609TZPK
+### appPackage com.medtronic.neuro.dbspatient
+### appActivity .activity.TaskSelectionActivity
+connect = CONNECT > TM91 > @CONTINUE > @ENTER MANUALLY > @0 > @1 > @0 > @3 > @8 > @9 > @CONTINUE
+setup = @START::180 > check(Device Found)::90 > _ss_A10e_PerceptRC_DBS_TestCase1_Device_Found_Screen > @YES > @CONTINUE::180 > @CONTINUE > @DONE > _ss_A10e_PerceptRC_DBS_TestCase1_Home_Screen

@@ -1,0 +1,10 @@
+
+### appPackage com.medtronic.neuro.tibialcommercialclinician
+### appActivity zs.Zpw
+pre = script(update_off)
+Connect = CONNECT > xpath(//com.medtronic.neuro.harmonyui.widget.HarmonyCheckBox[@content-desc="not-pending"]) > @CONTINUE > @ENTER MANUALLY > @0 > @1 > @0 > @3 > @3 > @9 > @NEXT > @FIND IMPLANT::60 > check(SELECT ALTAVIVA™ IMPLANT)::180 > *--device > _ss_A4P_Altaviva_TestCase2_Device_Found_Screen > @CONTINUE > @CONTINUE::30* >check(THERAPY DETAILS)::120
+Home screen = _ss_A4P_Altaviva_TestCase2_HomeScreen > @RECHARGER SETTINGS > _ss_A4P_Altaviva_TestCase2_Recharger_Setting_Screen > @DONE
+Stim = xpath(//com.medtronic.neuro.harmonyui.widget.HarmonyTextView[@resource-id="com.medtronic.neuro.tibialcommercialclinician:id/btn_stimulation_edit"]) > _ss_A4P_Altaviva_TestCase2_Stimulation screen > @DONE
+about = ham > About > _ss_A4P_Altaviva_TestCase2_About_Screen_Implant > Tablet > _ss__ss_A4P_Altaviva_TestCase2_About_Screen_Tablet > Recharger >_ss__ss_A4P_Altaviva_TestCase2_About_Screen_Recharger > @CLOSE > _back_ > @EXIT SESSION
+Report = REPORTS > script(report,3)  > @CLOSE
+//Report = REPORTS > script(report,3) > @CONFIRM > @OK::120 > @CLOSE

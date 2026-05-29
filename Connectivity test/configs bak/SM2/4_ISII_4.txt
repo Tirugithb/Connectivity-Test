@@ -1,0 +1,4 @@
+### udid RF8T50K1E1T
+### appPackage com.android.vending
+### appActivity .AssetBrowserActivity
+recent apps = _ss_A10e_SynchroMed_SM2_TestCase2B_Play_Store_Screen > exec(adb shell input keyevent 3) > swipe(500 1500 500 300) > _ss_Apps Installed

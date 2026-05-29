@@ -1,0 +1,9 @@
+### udid R52W307VZ5X
+### appPackage com.medtronic.neuro.dbs.clinician
+### appActivity .application.lifecycle.activities.StartAppActivity
+DBS Connectivity = CONNECT > *NPI705951H Right Side::30* > @CONNECT* >  @OK::60* > @SKIP::60* > @SKIP::60* > check(HOME)::60 > _ss_home_page
+Check STIM = &Stimulation||on
+About screen = ham > About > _ss_about_page > @CLOSE 
+Stimulation = STIMULATION > @OK > xpath((//android.widget.RelativeLayout[@resource-id="com.medtronic.neuro.dbs.clinician:id/gpc_first_left_program"])[1]) > _ss_stim_page
+Exit = _back_ > _back_ > _back_ > @END SESSION
+Report = REPORTS > script(report,4) > @CONFIRM > @OK::120 > @CLOSE

@@ -1,0 +1,7 @@
+### udid R52W307VZ5X
+### appPackage com.medtronic.neuro.suretuneconnector
+### appActivity .activity.SplashActivity
+Connect = @SETUP CONNECTION > //com.medtronic.neuro.HarmonyUI.widget.HarmonyEditText[@content-desc="not-pending"]_text_https://9yzhtt3.ent.core.medtronic.com:4443
+Keystore = @SELECT KEYSTORE > stc-keystore 1.p12 > //android.widget.EditText[@resource-id="com.medtronic.neuro.suretuneconnector:id/et_keystore_password"]_text_Medtronic1
+TrustStore = @SELECT TRUSTSTORE > stc-keystore 1.p12 > //android.widget.EditText[@resource-id="com.medtronic.neuro.suretuneconnector:id/et_truststore_password"]_text_Medtronic1 > @SAVE > check(SURETUNE™ 4 CONNECTION CONFIGURED) > _ss_homepage
+About = setting > About > _ss_aboutpage

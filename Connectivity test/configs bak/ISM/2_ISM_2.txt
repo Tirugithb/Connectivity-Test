@@ -1,0 +1,4 @@
+### udid R58T40H039P
+### appPackage com.medtronic.neuro.perficio.ppa
+### appActivity .welcome.SplashActivity
+Connect = @FIND DEVICE::30 > check(Select Device…)::30 > _ss_A13_InterStim_Micro_PP_TestCase1_Device_Found_Screen > *NMF710387::30 > ham > Home > _ss_A13_InterStim_Micro_PP_TestCase1_Home_Screen

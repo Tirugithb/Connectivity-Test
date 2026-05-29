@@ -1,0 +1,6 @@
+### udid RF8T50VPXHR
+### appPackage com.medtronic.neuro.SMPlusPatient
+### appActivity .userinterface.activities.SplashActivity
+### noReset True
+//init = @PAIR TO PUMP > @COMPLETE PAIRING::60 > ham::60
+Init = ham > Resync > delta(Resync) > check-id(com.medtronic.neuro.SMPlusPatient:id/tv_request_new_bolus)::600 > delta(Resync)

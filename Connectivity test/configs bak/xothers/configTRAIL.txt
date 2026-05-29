@@ -1,0 +1,8 @@
+### udid R52TA0EKS2Y
+### appPackage com.medtronic.neuro.scscptrialing
+### appActivity .ui.common.activities.SplashActivity
+ENS Connectivity = CONNECT > *NLJ202360N::60 > @CONNECT > @CONTINUE SESSION > check(SELECT FLOW:)::120 
+STIM ON = &Stimulation||on > @OK*
+Delay = delay(45)
+Stimulation = FOLLOWUP > @START > Programs > +C1 > &ACTIVATE||on > @ACTIVATE::10* > INTENSITY > fw_btn > @CLOSE > @CLOSE
+Exit = Summary > @EXIT WORKFLOW

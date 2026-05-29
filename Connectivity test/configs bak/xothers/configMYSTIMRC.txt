@@ -1,0 +1,9 @@
+### udid R58T40QZH3V
+### appPackage com.medtronic.neuro.scspatient.painrcapp
+### appActivity .view.PainRcSplashActivity
+### noReset True
+//Connect = CONNECT > @ENTER MANUALLY > @0 > @0 > @5 > @3 > @5 > @6 > @CONTINUE > check(Setup Link)::180
+//Stim connection = @START > check(NNC500470H)::60 > @YES > check(Therapy)::120
+iter = script(batt) > _back_ > h&On > down_arrow > h&Off > @YES > up_arrow
+Delay = delay(15)
+check Home = check(Therapy)

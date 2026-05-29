@@ -1,0 +1,4 @@
+### appPackage com.android.settings
+### appActivity .Settings
+### noReset True 
+uninstall = exec(adb shell am start -n com.android.settings/.Settings) > delay(0.05) > tap(400,100) > xpath(//android.widget.Button[@content-desc="Search settings"]) > //android.widget.AutoCompleteTextView[@resource-id="com.android.settings.intelligence:id/search_src_text"]_text_Altaviva> xpath(//android.widget.LinearLayout[@resource-id="com.android.settings.intelligence:id/result_container"]) > xpath(//android.widget.Button[@resource-id="com.android.settings:id/button2"]) > check(Action not allowed) > _ss_A4P_Altaviva_TestCase8A_Notification_Screen

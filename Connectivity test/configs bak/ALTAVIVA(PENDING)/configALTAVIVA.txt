@@ -1,0 +1,7 @@
+### udid R52XA06SWLH
+### appPackage com.medtronic.neuro.tibialcommercialclinician
+### appActivity uo.mXb
+Connect = DEMO > @CONTINUE > @FIND IMPLANT > *NTI500359H > _ss_implant > @CONTINUE > check(THERAPY DETAILS)::120
+Home screen = _ss_home_page > @RECHARGER SETTINGS > _ss_recharger > @DONE
+Stim = xpath(//com.medtronic.neuro.harmonyui.widget.HarmonyTextView[@resource-id="com.medtronic.neuro.tibialcommercialclinician:id/btn_stimulation_edit"]) > _ss_stim > @DONE
+about = ham > About > _ss_about_implant > Tablet > _ss_about_tablet > @CLOSE > _back_ > @EXIT SESSION

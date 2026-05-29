@@ -1,0 +1,6 @@
+### udid R58T40R0JFJ
+### appPackage com.medtronic.neuro.tango.patient
+### appActivity oa.Ꭰ
+Start Page = @NEXT > next_track > next_track > next_track > @DONE
+Therapy = check(Therapy)::30 > script(updown)
+Exit workflow = _back_ > @END SESSION

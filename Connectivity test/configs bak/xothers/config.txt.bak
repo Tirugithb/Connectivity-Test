@@ -1,0 +1,7 @@
+### VANTA
+//Vanta INS Connectivity = CONNECT > @FIND DEVICE > *NMS505519H::30 > @CONNECT > check(SELECT FLOW:)::60
+//DBS Connectivity = CONNECT > @OK::60* > @SKIP::60* > @SKIP::60* > check(HOME)::60
+//Intellis connectivity = CONNECT > INTERNAL > @FIND DEVICE > *NME741732H > @CONNECT > check(SELECT FLOW:)::120
+//Restore connectivity = CONNECT > @FIND DEVICE > *NMB709025 > @CONNECT > check(SELECT FLOW:)::120
+//Inceptiv connectivity = CONNECT > @FIND DEVICE > *NNC500298H > @CONNECT > check(SELECT FLOW:)::120
+//Stim Trailing connectivity = CONNECT > *NLJ019848N::60 > @CONNECT > @CONTINUE SESSION* > check(SELECT FLOW:)::120

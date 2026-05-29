@@ -1,0 +1,7 @@
+### udid R52W307VNVR
+### appPackage com.medtronic.neuro.dbs.clinician
+### appActivity .application.lifecycle.activities.StartAppActivity
+DBS Connectivity = CONNECT > delta(CTM_connectivity) > check(Communication in Progress…)::60 > delta(CTM_connectivity) > delta(INS_connectivity) > check(HOME)::60 > delta(INS_connectivity) > _back_ > @END SESSION
+//Check STIM = &Stimulation||on
+//About screen = ham > About > _ss_about_page > @CLOSE 
+//Stimulation = STIMULATION > @OK > 0.2 > _ss_stim_page

@@ -1,0 +1,8 @@
+### udid R58T40H039P
+### appPackage com.medtronic.neuro.oasis.cpa
+### appActivity .welcome.SplashActivity
+enter default password = ENTER DEFAULT PASSWORD_text_115544
+enter password = //com.medtronic.neuro.HarmonyUI.widget.HarmonyEditText[@resource-id="com.medtronic.neuro.oasis.cpa:id/et_create_password_enter_password"]_text_Medtronic1 > //com.medtronic.neuro.HarmonyUI.widget.HarmonyEditText[@resource-id="com.medtronic.neuro.oasis.cpa:id/et_create_password_confirm_password"]_text_Medtronic1 > @UPDATE
+select region = *United States > @NEXT
+Connect = CONNECT > @FIND DEVICE > *NMG403830 > _ss_A13_InterStimX_CP_TestCase1_Device_Found_Screen > @CONTINUE > check(SELECT WORKFLOW)::180 > CONFIGURE IMPLANT > @START > swipe(1050 285 620 285) > Therapy > PROGRAM 1 > _ss_A13_InterStimX_CP_TestCase1_Home_Screen 
+Exiting = _back_ > _back_ > _back_ > check(SELECT WORKFLOW)::180 > _back_ > @END SESSION

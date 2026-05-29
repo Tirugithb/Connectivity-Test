@@ -1,0 +1,10 @@
+### udid R52W307VZ5X
+### appPackage com.medtronic.neuro.dbs.clinician
+### appActivity .application.lifecycle.activities.StartAppActivity
+DBS Connectivity = CONNECT > *--device::30* > @CONNECT* > check(HOME)::120 > _ss_A4P_Percept_PC_DBS_TestCase1_Home_Screen
+//DBS Connectivity = CONNECT > *--device::30* > @CONNECT*  > @SKIP::60* > @SKIP::60* > check(HOME)::60 > _ss_A4P_Percept_PC_DBS_TestCase1_Home_Screen
+Check STIM = &Stimulation||on
+About screen = ham > About > _ss_A4P_Percept_PC_DBS_TestCase1_About_Screen > @CLOSE
+Stimulation = STIMULATION > @OK > GROUP C > xpath((//android.widget.RelativeLayout[@resource-id="com.medtronic.neuro.dbs.clinician:id/gpc_first_left_program"])[3]) > _ss_A4P_Percept_PC_DBS_TestCase1_Stimulation_Screen
+Exit = _back_ > _back_ > _back_ > @END SESSION
+Report = REPORTS > script(report,4) > @CONFIRM > @OK::120 > @CLOSE

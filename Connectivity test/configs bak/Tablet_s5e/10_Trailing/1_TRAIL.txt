@@ -1,0 +1,10 @@
+### appPackage com.medtronic.neuro.scscptrialing
+### appActivity .ui.common.activities.SplashActivity
+pre = script(update_off_s5e)
+ENS Connectivity = CONNECT > *NLJ387366N::60 > @CONNECT > @CONTINUE SESSION > check(SELECT FLOW:)::120 
+STIM ON = &Stimulation||on > @OK* > _ss_home_page
+//Delay = delay(45)
+Stimulation = FOLLOWUP > @START > Programs > GROUP C > +C3 > &ACTIVATE||on > @ACTIVATE::10* > _ss_stim_page > @CLOSE
+About Screen = ham > About System > _ss_About_Screen > @CLOSE
+Exit = Summary > @EXIT WORKFLOW
+Report = REPORTS > script(report,3) > @CONFIRM > @OK::120 > @CLOSE

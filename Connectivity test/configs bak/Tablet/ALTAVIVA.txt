@@ -1,0 +1,8 @@
+### udid R52W307VZ5X
+### appPackage com.medtronic.neuro.tibialcommercialclinician
+### appActivity zs.Zpw
+//Connect = DEMO > @CONTINUE > @FIND IMPLANT > *NTI500359H > _ss_implant > @CONTINUE > check(THERAPY DETAILS)::120
+Connect = CONNECT > xpath(//com.medtronic.neuro.harmonyui.widget.HarmonyCheckBox[@content-desc="not-pending"]) > @CONTINUE > @ENTER MANUALLY > @0 > @1 > @0 > @3 > @3 > @9 > @NEXT > @FIND IMPLANT::60 > check(SELECT ALTAVIVA™ IMPLANT)::180 > *NTI501973H > _ss_implant > @CONTINUE > @CONTINUE::30* >check(THERAPY DETAILS)::120
+Home screen = _ss_home_page > @RECHARGER SETTINGS > _ss_recharger > @DONE
+Stim = xpath(//com.medtronic.neuro.harmonyui.widget.HarmonyTextView[@resource-id="com.medtronic.neuro.tibialcommercialclinician:id/btn_stimulation_edit"]) > _ss_stim > @DONE
+about = ham > About > _ss_about_implant > Tablet > _ss_about_tablet > @CLOSE > _back_ > @EXIT SESSION

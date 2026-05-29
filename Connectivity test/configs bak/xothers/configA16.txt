@@ -1,0 +1,3 @@
+### udid R5CY52N8N3N
+### appPackage com.android.settings
+### appActivity .homepage.SettingsHomepageActivity

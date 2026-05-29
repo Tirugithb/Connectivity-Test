@@ -1,0 +1,5 @@
+### udid R52W307VZ5X
+### appPackage com.medtronic.neuro.dbspatientdemo
+### appActivity com.medtronic.neuro.dbspatient.activity.TaskSelectionActivity
+Connect = DEMO > TM91 > @CONTINUE > @SCAN CODE > @CONTINUE > @CONTINUE > *Percept PC > checkbox(ADBS) > @CONTINUE > @YES > @CONTINUE > @DONE
+Home = _ss_homepage > ham > About > _next_ > _next_ > _next_ > _next_ > _ss_about page 

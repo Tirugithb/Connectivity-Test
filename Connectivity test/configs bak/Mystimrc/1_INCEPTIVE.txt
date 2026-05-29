@@ -1,0 +1,5 @@
+### udid RF8T50HJVXX
+### appPackage com.medtronic.neuro.scspatient.painrcapp
+### appActivity .view.PainRcSplashActivity
+connect = CONNECT  > @ENTER MANUALLY > @0 > @1 > @0 > @3 > @8 > @9 > @CONTINUE
+setup = @START::180 > check(Device Found)::90 > _ss_A10e_PainRC_SCS_TestCase1_Device_Found_Screen > @YES > check(HOME)::180 > _ss_A10e_PainRC_SCS_TestCase1_Home_Screen

@@ -1,0 +1,13 @@
+### udid R58T40R0JFJ
+### appPackage com.medtronic.neuro.tango.clinician
+### appActivity jn.ǘπ
+### noReset True
+//enter default password = et_enter_password_text_115544 > @ok
+//enter password = et_create_password_enter_password_text_medtronic1 > et_create_password_confirm_password_text_medtronic1 > @create
+//select region = *united states > @next
+//connectivity = connect > external > *nlm397072n::60 > @continue > check(select workflow)::60
+calc = script(switch2calc) > script(switch2calc)
+WORKFLOW = PLACE LEAD > @START > @+1.0 > @+1.0 > @+1.0 > @+1.0 > @+1.0 > @-1.0 > @-1.0 > @-1.0 > @-1.0 
+Set Rate = setting2 > Rate > script(rate) > @DONE
+Set Pulse Width = setting2 > Pulse Width > script(pulsewidth) > @DONE
+Exit = @DONE

@@ -1,0 +1,4 @@
+### udid RF8T50K1E1T
+### appPackage com.medtronic.neuro.SMPlusPatient
+### appActivity .userinterface.activities.SplashActivity
+Connect = @PAIR TO PUMP > check(PUMP FOUND)::180 > _ss_A10e_SynchroMed_SM2_TestCase1_Device_Found_Screen > @COMPLETE PAIRING > ham::180 > check(Deliver Bolus)::180 > _ss_A10e_SynchroMed_SM2_TestCase1_Home_Screen

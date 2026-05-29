@@ -1,0 +1,7 @@
+### udid R52W307VZ5X
+### appPackage com.medtronic.neuro.SynchroMedPlus
+### appActivity .userinterface.activities.StartAppActivity
+SYNC connectivity = DEMO > check(SELECT WORKFLOW)::120 
+settings = setting > Logs > @RETRIEVE ALL > @CLOSE
+refill = *REFILL ONLY > @START
+Reservoir = RESERVOIR VOLUME > @1 > @2 > @CONFIRM > res-id(com.medtronic.neuro.SynchroMedPlus:id/tv_next_appointment_date_field) > res-id(com.medtronic.neuro.SynchroMedPlus:id/tv_next_appointment_date_field)* > vYEAR > (2026) > @DONE > @NEXT > scroll(50) > scroll(50) > @UPDATE > checkbox(I have read and acknowledged all changes to the therapy and all pending alerts) > @CONFIRM

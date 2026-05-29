@@ -1,0 +1,9 @@
+### udid R52W307VZ5X
+### appPackage com.medtronic.neuro.painpcapp
+### appActivity com.medtronic.neuro.paincommon.view.splash.SplashActivity
+//Vanta INS Connectivity = CONNECT > @OK* > @FIND DEVICE > *NMS505502H::30 > @CONNECT > check(SELECT FLOW:)::120 
+//STIM ON = &Stimulation||on > @STIM ON*> _ss_home_page
+//Stimulation = @START > Programs > B > +B2 > &ACTIVATE||on > @ACTIVATE::10* > _ss_stimulation > @CLOSE
+//About Screen = ham > About System > _ss_about_page
+//Exit = @CLOSE > Summary > @EXIT WORKFLOW
+Report = REPORTS > script(report,3) > @CONFIRM > @OK::120 > @CLOSE

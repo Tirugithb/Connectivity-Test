@@ -1,0 +1,6 @@
+### udid RF8T609TZPK
+### appPackage com.airwatch.androidagent
+### appActivity .ORIGINAL
+### noReset True
+open app = exec(adb shell am start -n com.airwatch.androidagent/.ORIGINAL)
+Enrollment = ACCOUNT DETAILS > This Device > Enrollment > _ss_Enrollment - PPA13USOasisid

@@ -1,0 +1,9 @@
+### appPackage com.medtronic.neuro.painpcapp
+### appActivity com.medtronic.neuro.paincommon.view.splash.SplashActivity
+pre = script(update_off_s5e)
+Vanta INS Connectivity = CONNECT > @OK* > @FIND DEVICE > *NMS505519H::30 > @CONNECT > check(SELECT FLOW:)::120 
+STIM ON = &Stimulation||on > @STIM ON*> _ss_A4P_Vanta_TestCase1_Home_Screen
+Stimulation = @START > Programs > A > +A1 > &ACTIVATE||on > @ACTIVATE::10* > _ss_A4P_Vanta_TestCase1_Stimulation_Screen > @CLOSE
+About Screen = ham > About System > _ss_A4P_Vanta_TestCase1_About_Screen
+Exit = @CLOSE > Summary > @EXIT WORKFLOW
+Report = REPORTS > script(report,3) > @CONFIRM > @OK::120 > @CLOSE
