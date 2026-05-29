@@ -1,0 +1,5 @@
+### udid RF8N60NSEZR
+### appPackage com.medtronic.neuro.scspatient.painpcapp
+### appActivity .view.PainPcSplashActivity
+connect = CONNECT > @ENTER MANUALLY > @0 > @0 > @5 > @3 > @5 > @9 > @CONTINUE
+setup = @START::180 > check(Device Found)::90 > _ss_A10e_Pain PC_SCS_TestCase1_Device_Found_Screen > @YES > check(Therapy)::180 > _ss_A10e_Pain PC_SCS_TestCase1_Home_Screen

@@ -1,0 +1,11 @@
+
+### appPackage com.medtronic.neuro.scscptrialing
+### appActivity .ui.common.activities.SplashActivity
+pre = script(update_off)
+ENS Connectivity = CONNECT > *--device::60 > @CONNECT > @CONTINUE SESSION > check(SELECT FLOW:)::120 
+STIM ON = &Stimulation||on > @OK* > _ss_A4P_Stim_Trialing_TestCase1_Home_Screen
+//Delay = delay(45)
+Stimulation = FOLLOWUP > @START > Programs > A > xpath((//android.widget.RelativeLayout[@content-desc="A1"])[3]) > &ACTIVATE||on > @ACTIVATE::10* > _ss_A4P_Stim_Trialing_TestCase1_Stimulation_Screen > @CLOSE
+About Screen = ham > About System > _ss_A4P_Stim_Trialing_TestCase1_About_Screen > @CLOSE
+Exit = Summary > @EXIT WORKFLOW
+Report = REPORTS > script(report,3) > @CONFIRM > @OK::120 > @CLOSE

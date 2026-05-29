@@ -1,0 +1,9 @@
+### udid R52W307VZ5X
+### appPackage com.sec.android.app.myfiles
+### appActivity .ui.MainActivity
+//### noReset True
+//open = exec(adb shell am start -n com.sec.android.app.myfiles/.ui.MainActivity)
+docs = Internal storage > xpath(//android.widget.TextView[@content-desc="Documents, Folder"]) > Reports > Name > xpath(//android.widget.CheckedTextView[@text="Date"]) > xpath(//android.widget.ImageView[@content-desc="Ascending"]) > xpath((//android.widget.LinearLayout[@resource-id="com.sec.android.app.myfiles:id/main_text_container"])[1])
+open = Adobe Acrobat > @Just once::5* > xpath(//android.widget.ImageView[@content-desc="Close"])::5* > _ss_A4P_Vanta_TestCase4_Adobe_Screen > _back_  > xpath((//android.widget.LinearLayout[@resource-id="com.sec.android.app.myfiles:id/main_text_container"])[1]) > Content > @Just once::5* > print(Please take report photo) > delay(0.25)
+exit = exec(adb shell am force-stop com.airwatch.contentlocker)
+//open = exec(adb shell am start com.medtronic.neuro.SynchroMedPlus/.userinterface.activities.StartAppActivity)

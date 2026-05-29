@@ -1,0 +1,9 @@
+### appPackage com.medtronic.neuro.restoreclinicianapp
+### appActivity com.medtronic.neuro.paincommon.view.splash.SplashActivity
+pre = script(update_off)
+Restore connectivity = CONNECT > @OK* >  @FIND DEVICE > *--device::30 > @CONNECT > check(SELECT FLOW:)::120 > _ss_A4P_Restore_TestCase1_Home_Screen
+STIM ON = &Stimulation||on > @OK* > @START
+Stimulation = Programs > C > +C4 > _ss_A4P_Restore_TestCase1_Stimulation_Screen > @CLOSE
+About Screen = ham > About System > _ss_A4P_Restore_TestCase1_About_Screen
+Exit = @CLOSE > Summary > @EXIT WORKFLOW
+Report = REPORTS > script(report,3) > @OK::120 > @CLOSE

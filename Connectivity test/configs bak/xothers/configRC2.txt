@@ -1,0 +1,5 @@
+### udid R52TA04QBGV
+### appPackage com.medtronic.neuro.dbs.clinician
+### appActivity .application.lifecycle.activities.StartAppActivity
+DBS Connectivity = CONNECT > @OK::90* > @SKIP::60* > @SKIP::60* > check(HOME)::60 > delay(1)
+exit = _back_ > @END SESSION

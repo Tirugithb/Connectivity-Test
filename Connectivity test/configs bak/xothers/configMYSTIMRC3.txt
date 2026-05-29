@@ -1,0 +1,9 @@
+### udid R58T40R0JFJ
+### appPackage com.medtronic.neuro.scspatient.painrcapp
+### appActivity .view.PainRcSplashActivity
+Connect = CONNECT > @ENTER MANUALLY > @0 > @1 > @9 > @2 > @8 > @3 > @CONTINUE > check(Setup Link)::180
+Stim connection = @START > check(NNA500205H)::60 > @YES > check(Communication in Progress…)::180
+//check_raw(@content-desc="Value: 55")::120
+//close app = exec(adb shell am kill com.medtronic.neuro.scspatient.painrcapp)
+Close App = exec(adb shell input keyevent KEYCODE_APP_SWITCH) > tap(500,1885) > tap(500,1885) > tap(500,1885)
+Check = check(System Error)::180

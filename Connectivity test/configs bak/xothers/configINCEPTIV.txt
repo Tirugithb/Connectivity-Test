@@ -1,0 +1,9 @@
+### udid R52W307VZ5X
+### appPackage com.medtronic.neuro.painrcapp
+### appActivity com.medtronic.neuro.paincommon.view.splash.SplashActivity
+Inceptiv connectivity = CONNECT > @FIND DEVICE > *NNC500394H > @CONNECT > check(SELECT FLOW:)::120 > _ss_home_page
+STIM ON = &Stimulation||on > @STIM ON* > @START
+Stimulation = Programs > +A1 > &ACTIVATE||on > @ACTIVATE::10* > _ss_stimulation > @CLOSE
+About Screen =  ham > About System > _ss_about_page
+Exit = @CLOSE > Summary > @EXIT WORKFLOW
+Report = REPORTS > script(report,3) > @CONFIRM > @OK::120 > @CLOSE

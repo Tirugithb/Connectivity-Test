@@ -1,0 +1,5 @@
+### udid R52Y50A6L7E
+### appPackage com.medtronic.neuro.dbs.clinician
+### appActivity .application.lifecycle.activities.StartAppActivity
+### noReset True
+Connection = script(drag)

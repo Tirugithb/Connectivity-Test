@@ -1,0 +1,10 @@
+### udid R58T40R0JFJ
+### appPackage com.medtronic.neuro.scspatient.painrcapp
+### appActivity .view.PainRcSplashActivity
+Connect = CONNECT > @ENTER MANUALLY > @0 > @1 > @9 > @2 > @8 > @3 > @CONTINUE > check(Setup Link)::180
+Stim connection = @START > check(NNA500205H)::60 > @YES > check(Therapy)::180
+Quick switch = script(quick_switch) 
+Close App = exec(adb shell input keyevent KEYCODE_APP_SWITCH) > tap(500,1885) > tap(500,1885) > tap(500,1885)
+Check = check(System Error)::180
+//android.widget.ImageView
+//00000000-0000-001d-ffff-ffff00000f0f

@@ -1,0 +1,9 @@
+### udid R52W307VZ5X
+### appPackage com.medtronic.neuro.intellisapp
+### appActivity .ui.common.activities.SplashActivity
+Intellis connectivity = CONNECT > INTERNAL > @FIND DEVICE > *NME741732H::30 > @CONNECT > check(SELECT FLOW:)::120 > _ss_home_page
+STIM ON = &Stimulation||on > @OK* > FOLLOWUP > @START
+Stimulation = Programs > +A1 > &ACTIVATE||on > @ACTIVATE::10* >_ss_stimulation > @CLOSE
+About Screen = ham > About System > _ss_about_page
+Exit = @CLOSE > Summary > @EXIT WORKFLOW
+Report = REPORTS > script(report,3) > @CONFIRM > @OK::120 > @CLOSE

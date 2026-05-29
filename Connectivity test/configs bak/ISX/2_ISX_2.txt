@@ -1,0 +1,4 @@
+### udid R58T40H039P
+### appPackage com.medtronic.neuro.oasis.ppa
+### appActivity .welcome.SplashActivity
+Connect = @FIND DEVICE::30 > check(Select Device…)::30 > _ss_A13_InterStimX_PP_TestCase1_Device_Found_Screen > *NMG403830::30 > @CONTINUE > ham::60 > Home > _ss_A13_InterStimX_PP_TestCase1_Home_Screen

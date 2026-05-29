@@ -1,0 +1,9 @@
+### udid RF8T6015Z1L
+### appPackage com.medtronic.neuro.scspatient.painpcapp
+### appActivity .view.PainPcSplashActivity
+//clear app data = exec(adb shell pm clear com.medtronic.neuro.scspatient.painpcapp)
+//qs = qs_Bluetooth : on > @Done* > _back_ > _back_
+Connect = CONNECT > @ENTER MANUALLY > @0 > @1 > @0 > @3 > @9 > @8 > @CONTINUE > check(Setup Link)::180 
+//Check Noti = _noti_ > check(Connected to NPE010398N) > _back_ > _back_
+//About Page = setting2 > About > _next_ > _next_ > check(NPE010398N) > _back_
+Stim connection = @START >  check(NMS505502H)::60 > @YES > check(Therapy)::120 > down_arrow > check(14.8)::10 > _back_ > @EXIT

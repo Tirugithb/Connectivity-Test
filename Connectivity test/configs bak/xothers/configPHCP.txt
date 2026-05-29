@@ -1,0 +1,9 @@
+### udid R58T40R0JFJ
+### appPackage com.medtronic.neuro.tango.clinician
+### appActivity jn.ǘπ
+//Enter Password = et_enter_password_text_Medtronic1 > @OK
+enter default password = et_enter_password_text_115544
+enter password = et_create_password_enter_password_text_Medtronic1 > et_create_password_confirm_password_text_Medtronic1 > @CREATE
+select region = *United States > @NEXT
+connectivity = CONNECT > EXTERNAL > *NLM397072N::60 > @CONTINUE > check(SELECT WORKFLOW)::60
+Exit workflow = _back_ > @END SESSION

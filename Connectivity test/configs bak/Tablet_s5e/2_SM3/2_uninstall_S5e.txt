@@ -1,0 +1,5 @@
+### appPackage com.android.settings
+### appActivity .Settings
+### noReset True 
+### popup False
+uninstall = exec(adb shell am start -n com.android.settings/.Settings) > xpath(//android.widget.Button[@content-desc="Search"]) > //android.widget.EditText[@resource-id="com.android.settings.intelligence:id/search_src_text"]_text_synchromed > xpath(//android.support.v7.widget.RecyclerView[@resource-id="com.android.settings.intelligence:id/list_results"]/android.widget.LinearLayout[1]) > xpath(//android.widget.Button[@resource-id="com.android.settings:id/button1_negative"]) > check(Unable to perform action) > _ss_A4P_Percept PC_DBS_TestCase8A_Notification_Screen

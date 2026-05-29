@@ -1,0 +1,6 @@
+### udid R58T40R1C4M
+### appPackage com.medtronic.neuro.SMPlusPatient
+### appActivity .userinterface.activities.SplashActivity
+### noReset True
+//init = @PAIR TO PUMP > @COMPLETE PAIRING::60 > ham::60
+Init = ham > Resync > delta(Resync) > check(HOME)::180 > delta(Resync)

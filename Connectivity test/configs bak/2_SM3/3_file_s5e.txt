@@ -1,0 +1,8 @@
+### class sm3
+### appPackage com.sec.android.app.myfiles
+### appActivity .external.ui.MainActivity
+//### noReset True
+//open = exec(adb shell am start -n com.sec.android.app.myfiles/.ui.MainActivity)
+docs = Internal storage > Date > Reports > xpath((//android.widget.RelativeLayout[@resource-id="com.sec.android.app.myfiles:id/contents_container"])[1]) > Adobe Acrobat > @Just once::5* > _ss_A4P_A4P_Percept PC_DBS_TestCase4_Adobe_Screen_TestCase4_Adobe_Screen > _back_ 
+//> xpath((//android.widget.LinearLayout[@resource-id="com.sec.android.app.myfiles:id/main_text_container"])[1]) > xpath((//android.widget.LinearLayout[@resource-id="com.sec.android.app.myfiles:id/main_text_container"])[1]) > Content > @Just once::5* > print(Please take report photo) > delay(0.50)
+exit = exec(adb shell am force-stop com.airwatch.contentlocker)

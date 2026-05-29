@@ -1,0 +1,6 @@
+### udid R52W307VZ5X
+### appPackage com.medtronic.neuro.dbs.clinician
+### appActivity .application.lifecycle.activities.StartAppActivity
+DBS Connectivity = CONNECT > *NPI705951H Right Side::30* > @CONNECT* > @SKIP::60* > @SKIP::60* > check(HOME)::60 
+About screen = ham > About > Tablet > _ss_About_Screen > @CLOSE 
+Exit = _back_ > @END SESSION

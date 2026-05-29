@@ -1,0 +1,4 @@
+### udid RF8N60NSTZJ
+### appPackage com.medtronic.neuro.scspatient.ensapp
+### appActivity .view.EnsSplashActivity
+Connect = CONNECT > check(Device Found)::180 > _ss_A10e_ENS_SCS_TestCase1_Device_Found_Screen > @YES > check(Therapy)::180 > _ss_A10e_ENS_SCS_TestCase1_Home_Screen

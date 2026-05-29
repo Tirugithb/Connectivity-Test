@@ -1,0 +1,7 @@
+### udid R58T40R0JFJ
+### appPackage com.medtronic.neuro.scspatient.painpcapp
+### appActivity .view.PainPcSplashActivity
+//clear app data = exec(adb shell pm clear com.medtronic.neuro.scspatient.painpcapp)
+Connect = _ss_ > CONNECT > _ss_ > @ENTER MANUALLY > @0 > @0 > @5 > @3 > @5 > @6 > _ss_ > @CONTINUE > _ss_ > check(Setup Link)::180 
+//About Page = setting2 > About > _next_ > _next_ > check(NPE005356N) > _back_
+Stim connection = _ss_ > @START > _ss_ > check(NMS505502H)::60 > @YES > _ss_ > check(Therapy)::120 > _back_ > @EXIT

@@ -1,0 +1,17 @@
+capabilities = dict(
+    platformName="Android",
+    automationName="uiautomator2",
+    autoGrantPermissions="true",
+    language="en",
+    locale="US",
+    host="host.docker.internal",
+    dontStopAppOnReset=True,
+    unlockType="password",
+    unlockKey="Medtronic1",
+    appWaitForLaunch=False,
+    uiautomator2ServerInstallTimeout=60000,
+    noreset=False,
+    uiautomator2ServerLaunchTimeout=60000,
+    adbExecTimeout=60000,
+    newCommandTimeout=60000,
+)

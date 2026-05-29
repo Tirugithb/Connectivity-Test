@@ -1,0 +1,4 @@
+### udid RF8T609TZPK
+### appPackage com.android.vending
+### appActivity .AssetBrowserActivity
+recent apps = _ss_A13_InterStim2_PP_TestCase2B_Play_Store_Screen > exec(adb shell input keyevent 3) > swipe(500 1500 500 300) > _ss_Apps Installed 1 - PPA13USOasisid

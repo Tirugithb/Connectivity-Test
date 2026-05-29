@@ -1,0 +1,4 @@
+### udid RF8T50K1E1T
+### appPackage com.sec.android.app.launcher
+### appActivity .activities.LauncherActivity
+recent apps = exec(adb shell input keyevent KEYCODE_APP_SWITCH) > _ss_Background Apps

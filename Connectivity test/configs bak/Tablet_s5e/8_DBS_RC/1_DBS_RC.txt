@@ -1,0 +1,9 @@
+### appPackage com.medtronic.neuro.dbs.clinician
+### appActivity .application.lifecycle.activities.StartAppActivity
+pre = script(update_off_s5e)
+DBS Connectivity = CONNECT > *NND500395H::30* > @CONNECT* > check(HOME)::60 > _ss_A4P_PerceptRC_DBS_TestCase1_Home_Screen
+Check STIM = &Stimulation||on
+About screen = ham > About > _ss_A4P_Percept_RC_DBS_TestCase1_About_Screen > @CLOSE 
+Stimulation = STIMULATION > @OK* > GROUP C > xpath((//android.widget.RelativeLayout[@resource-id="com.medtronic.neuro.dbs.clinician:id/gpc_first_left_program"])[3]) > _ss_A4P_Percept_RC_DBS_TestCase1_Stimulation_Screen
+Exit = _back_ > _back_ > _back_ > @END SESSION
+Report = REPORTS > script(report,4) > @CONFIRM > @OK::120 > @CLOSE

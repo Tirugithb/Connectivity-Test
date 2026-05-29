@@ -1,0 +1,9 @@
+### appPackage com.medtronic.neuro.painrcapp
+### appActivity com.medtronic.neuro.paincommon.view.splash.SplashActivity
+pre = script(update_off)
+Inceptiv connectivity = CONNECT > @FIND DEVICE > *--device::30 > @CONNECT > check(SELECT FLOW:)::120 > _ss_A4P_Inceptiv_TestCase1_Home_Screen
+STIM ON = &Stimulation||on > @STIM ON* > @START
+Stimulation = Programs > +A1 > &ACTIVATE||on > @ACTIVATE::10* > _ss_A4P_Inceptiv_TestCase1_Stimulation_Screen > @CLOSE
+About Screen =  ham > About System > _ss_A4P_Inceptiv_TestCase1_About_Screen
+Exit = @CLOSE > Summary > @EXIT WORKFLOW
+Report = REPORTS > script(report,3) > @CONFIRM > @OK::120 > @CLOSE

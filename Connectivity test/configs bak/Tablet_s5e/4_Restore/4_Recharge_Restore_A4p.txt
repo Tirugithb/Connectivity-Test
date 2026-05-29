@@ -1,0 +1,4 @@
+### appPackage com.medtronic.neuro.insrecharger
+### appActivity .presentation.activities.SplashActivity
+Connectivity = CONNECT > @ENTER MANUALLY > @NPW > @0 > @1 > @4 > @3 > @7 > @6 > @CONTINUE > check(Charging)::90
+About = ham > About > _ss_A4P_Restore_TestCase3_Recharger_Screen1 > RECHARGER > _ss_A4P_Restore_TestCase3_Recharger_Screen2

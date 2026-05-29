@@ -1,0 +1,4 @@
+### udid R58T40R0JFJ
+### appPackage com.medtronic.neuro.scspatient.painpcapp
+### appActivity .view.PainPcSplashActivity
+clear app data = exec(adb shell pm clear com.medtronic.neuro.scspatient.painpcapp)

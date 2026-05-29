@@ -1,0 +1,4 @@
+### udid R58T40H039P
+### appPackage com.medtronic.neuro.insrecharger
+### appActivity .presentation.activities.SplashActivity
+Connect = CONNECT > @ENTER MANUALLY > @NPP > @0 > @1 > @8 > @9 > @6 > @4 > @CONTINUE > ham::60 > About > _ss_A13_InterStim_Micro_PP_TestCase4_Micro_Recharger_About_Screen2 > RECHARGER > _ss_A13_InterStim_Micro_PP_TestCase4_Micro_Recharger_About_Screen1

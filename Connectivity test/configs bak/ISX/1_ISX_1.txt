@@ -1,0 +1,8 @@
+### udid R58T40H039P
+### appPackage com.medtronic.neuro.oasis.cpa
+### appActivity .welcome.SplashActivity
+enter default password = ENTER DEFAULT PASSWORD_text_115544
+enter password = //com.medtronic.neuro.HarmonyUI.widget.HarmonyEditText[@resource-id="com.medtronic.neuro.oasis.cpa:id/et_create_password_enter_password"]_text_Medtronic1 > //com.medtronic.neuro.HarmonyUI.widget.HarmonyEditText[@resource-id="com.medtronic.neuro.oasis.cpa:id/et_create_password_confirm_password"]_text_Medtronic1 > @UPDATE
+select region = *United States > @NEXT
+remove device = setting2 > Manage Devices > INTERNAL > xpath(//android.widget.Button[@resource-id="com.medtronic.neuro.oasis.cpa:id/device_delete_button"])* > @REMOVE DEVICE*
+//add device = ADD DEVICE > @FIND DEVICE::30 > *NJY420284 > _ss_A13_InterStimX_PP_TestCase1_Device_Found_Screen > @CONTINUE

@@ -1,0 +1,5 @@
+### udid R58T40H039P
+### appPackage com.airwatch.androidagent
+### appActivity com.airwatch.agent.hub.hostactivity.HostActivity
+### fullReset false
+### noReset true
